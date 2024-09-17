@@ -37,55 +37,194 @@ $ hexo deploy
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 
+## Markdown Test
+
+### 标题层级
+
+``` markdown
+# H1
 ## H2
-## H22
-1. 午夜北平
-2. 当我们谈论爱情时我们在谈论什么
-   - 作者：雷蒙德·卡佛
-   - 分类：小说/小说集
-   - 阅读时间：22/08/22 - 23/01/30
-评分：3/5
-书评：没什么感觉，卖多抓鱼了
-备注：RC2023.02 从独立书店购得的书（广州1200书店）
+### H3
+#### H4
+##### H5
+###### H6
 
-**加粗**
+另外,  H1、H2还有其他语法：
 
-*斜体*
+Alt-H1
+======
 
-~~删除线~~
+Alt-H2
+------
+``` 
 
----
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+另外,  H1、H2还有其他语法：
+
+Alt-H1
+======
+
+Alt-H2
+------
+
+### 文本：斜体、加粗、删除线
+
+``` markdown
+Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+``` 
+
+Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+
+### 列表
+
+``` markdown
+1. First ordered list item
+2. Another item
+  * Unordered sub-list.
+1. Actual numbers don't matter, just that it's a number
+  1. Ordered sub-list
+4. And another item.
+
+   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+   To have a line break without a paragraph, you will need to use two trailing spaces.  
+   Note that this line is separate, but within the same paragraph.  
+   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+- Paragraph In unordered list
+
+  For example like this.
+
+Common Paragraph with some text.
+And more text.
+``` 
+
+1. First ordered list item
+2. Another item
+  * Unordered sub-list.
+1. Actual numbers don't matter, just that it's a number
+  1. Ordered sub-list
+4. And another item.
+
+   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+
+   To have a line break without a paragraph, you will need to use two trailing spaces.  
+   Note that this line is separate, but within the same paragraph.  
+   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
+- Paragraph In unordered list
+
+  For example like this.
+
+Common Paragraph with some text.
+And more text.
+
+### 链接
+[参考博文1](https://probberechts.github.io/hexo-theme-cactus/cactus-dark/public/2016/11/01/An-overview-of-all-Markdown-elements/)
+[参考博文2](https://fushaolei.fun/hexo-theme-white/2018/07/24/markdown/)
+You can find more information about LaTeX mathematical expressions [here](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference_).
+
+### 引用
+
+``` markdown
 > 引用
 
 >> 嵌套引用
+``` 
+
+> 引用
+
+>> 嵌套引用
+
+### 表格
+
+``` markdown
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned |  test|
+| col 2 is      | centered      |  test  |
+| col 2 is      | default（left-aligned）|   test  |
+
+``` 
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned |  test|
+| col 2 is      | centered      |  test  |
+| col 2 is      | default（left-aligned）|   test  | 
+
+``` markdown
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+``` 
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+### Latex
+These render differently. For example, type the following to show inline mode:
+$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$
+
+or type the following for display mode:
+$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
+
+### 分割线
+``` markdown
 ---
 
-```markdown
-Sample text here...
-```
+Hyphens
 
-```js
-grunt.initConfig({
-  assemble: {
-    options: {
-      assets: 'docs/assets',
-      data: 'src/data/*.{json,yml}',
-      helpers: 'src/custom-helpers.js',
-      partials: ['src/partials/**/*.{hbs,md}']
-    },
-    pages: {
-      options: {
-        layout: 'default.hbs'
-      },
-      files: {
-        './': ['src/templates/pages/index.hbs']
-      }
-    }
-  }
-};
-```
+***
+
+Asterisks
+
+___
+
+Underscores
+``` 
 
 ---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
+
+### 脚注
 
 This is a digital footnote[^1].
 This is a footnote with "label"[^label]
@@ -94,6 +233,74 @@ This is a footnote with "label"[^label]
 [^label]: This is a footnote with "label"
 
 
-| 名称 | 作者| 类型 | 评分 | 日期 | 短评 | 备注 |
-| :--- | :--- | :---: | :---: | :---: | :--- | :--- |
+You could predefine link references. Format like this: `[id]: URL "Title"`
+
+Title is also optional. And the you refer the link, format like this: `[Link Text][id]`
+
+``` markdown
+[id]: http://example.com/  "Optional Title Here"
+This is [an example][id] reference-style link.
+```
+[id]: http://example.com/  "Optional Title Here"
+This is [an example][id] reference-style link.
+
+以下几种写法是等价的
+``` markdown
+[foo]: http://example.com/  "Optional Title Here"
+[foo]: http://example.com/  'Optional Title Here'
+[foo]: http://example.com/  (Optional Title Here)
+[foo]: <http://example.com/>  "Optional Title Here"
+```
+
+Uses an empty set of square brackets, the link text itself is used as the name.
+``` markdown
+[Google]: http://google.com/
+[Google][]
+```
+[Google]: http://google.com/
+[Google][]
+
+### 图片
+``` markdown
+hover to see the title text:
+
+Inline-style:
+
+![alt text](https://hexo.io/icon/favicon-196x196.png "Logo Title Text 1")
+
+Reference-style:
+![alt text][logo]
+
+[logo]: https://hexo.io/icon/favicon-196x196.png "Logo Title Text 2"
+``` 
+
+hover to see the title text:
+
+Inline-style:
+
+![alt text](https://hexo.io/icon/favicon-196x196.png "Logo Title Text 1")
+
+Reference-style:
+![alt text][logo]
+
+[logo]: https://hexo.io/icon/favicon-196x196.png "Logo Title Text 2"
+
+### 视频
+``` markdown
+<a href="https://www.youtube.com/watch?feature=player_embedded&v=ARted4RniaU
+" target="_blank"><img src="https://img.youtube.com/vi/ARted4RniaU/0.jpg"
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+Pure markdown version:
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ARted4RniaU/0.jpg)](https://www.youtube.com/watch?v=ARted4RniaU)
+``` 
+
+<a href="https://www.youtube.com/watch?feature=player_embedded&v=ARted4RniaU
+" target="_blank"><img src="https://img.youtube.com/vi/ARted4RniaU/0.jpg"
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+Pure markdown version:
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ARted4RniaU/0.jpg)](https://www.youtube.com/watch?v=ARted4RniaU)
 
