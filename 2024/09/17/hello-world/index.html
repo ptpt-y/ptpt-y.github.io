@@ -134,8 +134,8 @@
                   itemprop="datePublished">2024-09-17</time>
             
                 (Updated:
-                <time datetime="2024-09-17T15:58:34.352Z"
-                      itemprop="dateModified">2024-09-17</time>)
+                <time datetime="2024-09-17T16:19:17.584Z"
+                      itemprop="dateModified">2024-09-18</time>)
             
         
     </div>
@@ -202,7 +202,7 @@
 </li>
 </ul>
 <p>Common Paragraph with some text.<br>And more text.</p>
-<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p><a target="_blank" rel="noopener" href="https://fushaolei.fun/hexo-theme-white/2018/07/24/markdown/">参考博文</a><br>You can find more information about LaTeX mathematical expressions <a target="_blank" rel="noopener" href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference_">here</a>.</p>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p><a target="_blank" rel="noopener" href="https://probberechts.github.io/hexo-theme-cactus/cactus-dark/public/2016/11/01/An-overview-of-all-Markdown-elements/">参考博文1</a><br><a target="_blank" rel="noopener" href="https://fushaolei.fun/hexo-theme-white/2018/07/24/markdown/">参考博文2</a><br>You can find more information about LaTeX mathematical expressions <a target="_blank" rel="noopener" href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference_">here</a>.</p>
 <h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 引用</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; 嵌套引用</span><br></pre></td></tr></table></figure>
 
 <blockquote>
@@ -272,6 +272,16 @@
 <p>Underscores</p>
 <h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h3><p>This is a digital footnote[^1].<br>This is a footnote with “label”[^label]</p>
 <p>[^1]: This is a digital footnote<br>[^label]: This is a footnote with “label”</p>
+<p>You could predefine link references. Format like this: <code>[id]: URL &quot;Title&quot;</code></p>
+<p>Title is also optional. And the you refer the link, format like this: <code>[Link Text][id]</code></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="symbol">id</span>]: <span class="link">http://example.com/  &quot;Optional Title Here&quot;</span></span><br><span class="line">This is [<span class="string">an example</span>][<span class="symbol">id</span>] reference-style link.</span><br></pre></td></tr></table></figure>
+<p>This is <a target="_blank" rel="noopener" href="http://example.com/" title="Optional Title Here">an example</a> reference-style link.</p>
+<p>以下几种写法是等价的</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[<span class="symbol">foo</span>]: <span class="link">http://example.com/  &quot;Optional Title Here&quot;</span></span><br><span class="line">[<span class="symbol">foo</span>]: <span class="link">http://example.com/  &#x27;Optional Title Here&#x27;</span></span><br><span class="line">[<span class="symbol">foo</span>]: <span class="link">http://example.com/  (Optional Title Here)</span></span><br><span class="line">[<span class="symbol">foo</span>]: <span class="link">&lt;http://example.com/&gt;  &quot;Optional Title Here&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>Uses an empty set of square brackets, the link text itself is used as the name.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="symbol">Google</span>]: <span class="link">http://google.com/</span></span><br><span class="line">[<span class="string">Google</span>][<span class="symbol"></span>]</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="http://google.com/">Google</a></p>
 <h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">hover to see the title text:</span><br><span class="line"></span><br><span class="line">Inline-style:</span><br><span class="line"></span><br><span class="line">![<span class="string">alt text</span>](<span class="link">https://hexo.io/icon/favicon-196x196.png &quot;Logo Title Text 1&quot;</span>)</span><br><span class="line"></span><br><span class="line">Reference-style:</span><br><span class="line">![<span class="string">alt text</span>][<span class="symbol">logo</span>]</span><br><span class="line"></span><br><span class="line">[<span class="symbol">logo</span>]: <span class="link">https://hexo.io/icon/favicon-196x196.png &quot;Logo Title Text 2&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>hover to see the title text:</p>
