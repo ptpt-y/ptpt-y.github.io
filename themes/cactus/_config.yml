@@ -17,7 +17,7 @@ logo:
   enabled: true
   width: 50
   height: 50
-  url: /images/Photo_0411_1a.jpg
+  url: /images/logo.png #Photo_0411_1a.jpg
   gravatar: false
 
 # 自定义 favicons.
